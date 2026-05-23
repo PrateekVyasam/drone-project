@@ -13,9 +13,9 @@ The goal is a single drone that adapts to the situation rather than requiring se
 
 ## Current Status
 
-- ✅ Frame geometry research and arm extension mechanism concept
-- ✅ Parts selection and budget documentation
-- 🔄 Frame design and prototyping in progress
+- ⬜ Frame geometry research and arm extension mechanism concept
+- ⬜ Parts selection and budget documentation
+- ⬜ Frame design and prototyping in progress
 - ⬜ Electronics integration and flight controller configuration
 - ⬜ First test flight
 
