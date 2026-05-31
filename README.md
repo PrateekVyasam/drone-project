@@ -1,4 +1,4 @@
-# Variable-Geometry FPV Drone
+# Variable-Geometry Drone Project
 
 A custom-built drone with mechanically extendable arms that can be adjusted mid-flight, allowing the pilot to switch between high-stability and high-speed flight modes on demand.
 
