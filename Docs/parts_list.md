@@ -1,0 +1,11 @@
+# Parts List
+
+| Component | Model | Quantity | Price |
+|---|---|---|---|
+| Motors | BrotherHobby Returner R5 2306 1750KV | 4 | |
+| ESC | Holybro Tekko32 F4 45A 4-in-1 | 1 | |
+| Flight Controller | Matek H743-Wing | 1 | |
+| Battery | Tattu 4S 1500mAh 75C | 2 | |
+| Receiver | BetaFPV ELRS Nano | 1 | |
+| Props | HQProp 6x3x3 | 8 | |
+| Screws | M3×6 self-tapping assortment | 1 kit | |
