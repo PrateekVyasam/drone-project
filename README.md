@@ -38,7 +38,7 @@ Complete first test flight with working arm extension mechanism by August 2026.
 
 ## Updates
 
-### Update 1 (05/28/2026)— Research & Parts Selection
+### Update 1 (05/28/2026) — Research & Parts Selection
 
 Defined project goals: variable geometry FPV drone with mechanically extendable arms to study the effect of arm length on flight characteristics. Set target AUW of 950g with 1000g hard ceiling. Selected all major components: BrotherHobby Returner R5 2306 1750KV motors, Holybro Tekko32 F4 45A 4-in-1 ESC, Matek H743-Wing flight controller, Tattu 4S 1500mAh 75C battery, BetaFPV ELRS Nano receiver, HQProp 6x3x3 props. Estimated build weight at 642–742g leaving 258–358g margin for arm extension mechanism.
 
