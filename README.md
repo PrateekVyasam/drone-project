@@ -54,8 +54,15 @@ Designed telescoping arm mechanism using two nested rectangular channels. Outer 
 
 Ran SolidWorks Static simulation on base plate and arm assembly using Nylon 6/10 as conservative material approximation for PETG. Applied 750N load at motor end face (approximately 75× actual motor thrust). Maximum von Mises stress result: 5.28 MPa against yield strength of 139 MPa — 3.8% of failure stress. Arm geometry confirmed structurally sound with large safety margin. Identified arm root junction as highest stress concentration point, flagged for fillet addition.
 
-## Update 6 (06/01/2026) - Dimensions Update
+## Update 5 (06/01/2026) - Dimensions Update
 
 Changed the base plate dimensions to fit 3D printing standard: Base plate dimension is now 130x80mm (not including the outer rectangular channels). Outer rectangular channel is now changed from 150mm to 80mm, hole placement is the same. Inner rectangular channel changed from 200mm to 100mm, hole placement is the same, updated the 2mm thick wall to 5mm thick wall, added 4 2.50 diameter circles diagonally forthe purpose of attached a motor mount design with M3x6 screws, extruded down to 5.00mm, enough to self-thread.
 
-### Update 5 — Motor Mount Design
+### Update 6 — Base Plates and Parts
+
+Edited the base plate by the following:
+- Removed excess area by cutting off part of the sides
+- Changed peg height and width to be smaller
+- Created Top Base Plate
+
+Parts for the drone had seemed to be out of budget, therefore I changed the original reciever (MATEKSYS ExpressLRS 2.4GHz Receiver ($26)) to ELRS Receivers Ser ($20), may change more components in future updates to cheaper alternatives if applicable.
