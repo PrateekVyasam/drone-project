@@ -44,11 +44,13 @@ Defined project goals: variable geometry FPV drone with mechanically extendable 
 
 ### Update 2 (05/29/2026)— Frame Design
 
-Designed elongated octagonal base plate (250x90mm, 0.5mm fillets, 25mm thick) in SolidWorks. Arms extend from four chamfered corners at 45° in X configuration. Switched from individual arm mechanisms to integrating the outer arm mechanism into the base plate itself. Added 30.5×30.5mm FC/ESC standoff peg pattern (M3, 7mm height) at center of base plate and 4 10mm stand off pegs in order to integrate a top plate.
+Designed elongated octagonal base plate (250x90mm, 0.5mm fillets, 25mm thick) in SolidWorks. Planning on creating the arm mechanism seperate from the frame, still deciding on how to integrate it to the frame itself. 
 
 ### Update 3 (05/30/2026) — Arm Mechanism Design
 
-Designed telescoping arm mechanism using two nested rectangular channels. Outer channel (fixed, 40×25mm, 2mm walls) is integrated into base plate. Inner channel (35×20mm, 2mm walls at motor end) slides within outer with 0.5mm clearance each side. Spring-loaded pin lock mechanism uses a spring housing block mounted inside the inner channel, with a cylindrical pin protruding through the top face to engage holes in the outer channel at contracted and extended positions. Pin holes in outer channel at 20mm from each end. Motor end of inner arm has thickened 5mm walls to accept M3×6 self-tapping screws for motor mount attachment.
+Switched from individual arm mechanisms to integrating the outer arm mechanism into the base plate itself. Designed telescoping arm mechanism using two nested rectangular channels. Outer channel (fixed, 40×25mm, 2mm walls 150mm long) is integrated into base plate. Inner channel (35×20mm, 2mm walls at motor end, 200mm long) slides within outer with 0.5mm clearance each side. Spring-loaded pin lock mechanism uses a spring housing block mounted inside the inner channel, with a cylindrical pin protruding through the top face to engage holes in the outer channel at contracted and extended positions. Pin holes in outer channel at 20mm from each end. Motor end of inner arm has thickened 5mm walls to accept M3×6 self-tapping screws for motor mount attachment. 
+
+Additional Info: Added 30.5×30.5mm FC/ESC standoff peg pattern (M3, 7mm height) at center of base plate and 4 10mm stand off pegs in order to integrate a top plate.
 
 ### Update 4 (05/31/2026) — Stress Simulation
 
@@ -56,13 +58,13 @@ Ran SolidWorks Static simulation on base plate and arm assembly using Nylon 6/10
 
 ## Update 5 (06/01/2026) - Dimensions Update
 
-Changed the base plate dimensions to fit 3D printing standard: Base plate dimension is now 130x80mm (not including the outer rectangular channels). Outer rectangular channel is now changed from 150mm to 80mm, hole placement is the same. Inner rectangular channel changed from 200mm to 100mm, hole placement is the same, updated the 2mm thick wall to 5mm thick wall, added 4 2.50 diameter circles diagonally forthe purpose of attached a motor mount design with M3x6 screws, extruded down to 5.00mm, enough to self-thread.
+Changed the base plate dimensions to fit 3D printing standard: Base plate dimension is now 130x80mm (not including the outer rectangular channels). Outer rectangular channel is now changed from 150mm to 80mm, hole placement is the same. Inner rectangular channel changed from 200mm to 100mm, hole placement is the same, updated the 2mm thick wall to 5mm thick wall, added 4 2.50 diameter circles diagonally forthe purpose of attached a motor mount design with M3x6 screws, extruded down to 5.00mm, enough to self-thread. Additionally, Inner arm mech shortened from 200mm to 150mm, as well as hole placements.
 
-### Update 6 — Base Plates and Parts
+### Update 6 (06/02/2026) — Base Plates and Parts
 
 Edited the base plate by the following:
 - Removed excess area by cutting off part of the sides
 - Changed peg height and width to be smaller
 - Created Top Base Plate
 
-Parts for the drone had seemed to be out of budget, therefore I changed the original reciever (MATEKSYS ExpressLRS 2.4GHz Receiver ($26)) to ELRS Receivers Ser ($20), may change more components in future updates to cheaper alternatives if applicable.
+Parts for the drone had seemed to be out of budget, therefore I changed the original reciever (MATEKSYS ExpressLRS 2.4GHz Receiver ($26)) to ELRS Receivers Ser ($20), may change more components in future updates to cheaper alternatives if applicable. Additionally, changing spring lock to a different alternative.
