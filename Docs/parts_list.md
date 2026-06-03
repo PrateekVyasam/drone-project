@@ -2,7 +2,7 @@
 
 | Component | Model | Quantity | Price |
 |---|---|---|---|
-| Motors | EMAX ECO II Series 2306 Motor (1700KV/1900KV/2400KV) | 4 | $52 |
+| Motors | EMAX ECO II Series 2306 Motor (1700KV) | 4 | $52 |
 | ESC | Tekko32 F4 4in1 50A ESC(AM32) | 1 | $63 |
 | Flight Controller | Original Speedybee 30X30 FPV BMI270 F405 V3 Flight Controller BLHELIS 60A ESC for FPV Freestyle Drones DIY Parts | 1 | $22 |
 | Battery | Tattu 4S 1300mAh 100C 14.8V LiPo Battery Pack with XT60 Plug for RC Heli Airplane Drone FPV Racing | 1 | $22 |
