@@ -68,3 +68,25 @@ Edited the base plate by the following:
 - Created Top Base Plate
 
 Parts for the drone had seemed to be out of budget, therefore I changed the original reciever (MATEKSYS ExpressLRS 2.4GHz Receiver ($26)) to ELRS Receivers Ser ($20), may change more components in future updates to cheaper alternatives if applicable. Additionally, changing spring lock to a different alternative.
+
+## Update 7 (06/04/2026) — Motor Mount, Base Plate Refinements, Inner Arm Extension Model, and Parts List
+
+Parts List Updates
+- Switched to heat-set threaded inserts to improve structural rigidity and reduce vibration-related failures.
+- Added a pigtail connector for simplified and more reliable battery connection.
+- Replaced the flight controller with a lower-cost alternative (approximately $30 cheaper) while maintaining compatibility with existing components.
+- Next step: selecting a compatible radio transmitter system.
+
+## Design Progress
+
+Motor Mount
+- Designed a new motor mount featuring a 16×16 mm mounting hole pattern.
+- Clearance for motor and propeller is still under review and may require adjustments in future iterations.
+
+Base Plate
+- Removed fillets around motor mount attachment holes to improve assembly alignment and simplify installation.
+
+Inner Arm Extension
+- Similarly removed fillets at mounting interfaces to ensure a tighter and more precise mechanical fit.
+
+
