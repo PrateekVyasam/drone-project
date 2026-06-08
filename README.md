@@ -92,4 +92,29 @@ Base Plate Refinements
 Inner Arm Extension
 - Removed fillets at mounting interfaces to ensure a tighter and more precise mechanical fit.
 
+## Update 8 (06/07/2026) — Assembly Stress Simulation, CAD Finalization, and Pre-Print Validation
 
+## Stress Simulation Results:
+
+- Ran SolidWorks static stress simulations on critical components to validate structural integrity before printing. Results are found in the Simulation Folder.
+
+## Inner arm assembly: peak von Mises stress of 0.063 MPa against a PETG yield strength of 37 MPa, producing a safety factor of approximately 587:1. The arm is structurally sound under full motor thrust loading.
+
+- Full drone assembly: peak stress of 6.031 MPa against the same yield strength, producing a safety factor of approximately 6:1. A minor stress concentration was identified at the motor mount junction and will be monitored but does not require design changes at current load levels.
+- Locking mechanism: simulation deferred — arm locking will use M3 metal threaded rods and nuts, which are orders of magnitude stronger than the loads applied. No simulation required.
+
+## CAD Finalization
+
+- Assembly confirmed structurally valid across all critical load cases.
+- Standoff pegs pass through corresponding holes in the top plate, providing lateral bracing at both ends and eliminating the cantilevered vibration failure mode.
+- Fillet radii maintained at peg bases to distribute stress concentration at mounting interfaces.
+- STL files exported and organized for printing.
+
+## Status
+CAD phase complete. 3D printer arriving June 21st. Electronics to be ordered during Amazon Prime Day (July 8-9). First print and assembly begins June 21st.
+
+## Next Steps
+
+- Print test arm first to verify slot dimensions and motor mount hole alignment before committing to full frame print
+- Confirm motor rotation direction convention before finalizing arm orientation
+- Order electronics — motors, ESC, flight controller, battery, receiver, props
