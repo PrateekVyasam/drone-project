@@ -98,8 +98,9 @@ Inner Arm Extension
 
 - Ran SolidWorks static stress simulations on critical components to validate structural integrity before printing. Results are found in the Simulation Folder.
 
-## Inner arm assembly: peak von Mises stress of 0.063 MPa against a PETG yield strength of 37 MPa, producing a safety factor of approximately 587:1. The arm is structurally sound under full motor thrust loading.
+## Inner arm assembly: 
 
+- Peak von Mises stress of 0.063 MPa against a PETG yield strength of 37 MPa, producing a safety factor of approximately 587:1. The arm is structurally sound under full motor thrust loading.
 - Full drone assembly: peak stress of 6.031 MPa against the same yield strength, producing a safety factor of approximately 6:1. A minor stress concentration was identified at the motor mount junction and will be monitored but does not require design changes at current load levels.
 - Locking mechanism: simulation deferred — arm locking will use M3 metal threaded rods and nuts, which are orders of magnitude stronger than the loads applied. No simulation required.
 
