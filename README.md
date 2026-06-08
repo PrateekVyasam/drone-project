@@ -96,7 +96,7 @@ Inner Arm Extension
 
 ## Stress Simulation Results:
 
-- Ran SolidWorks static stress simulations on critical components to validate structural integrity before printing. Results are found in the Simulation Folder.
+- Ran SolidWorks static stress simulations on critical components to validate structural integrity before printing. Results are found in the Images Folder (Update 8).
 
 ## Inner arm assembly: 
 
