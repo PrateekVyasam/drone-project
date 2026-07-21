@@ -44,7 +44,7 @@ allowing real-time switching between high-stability and high-agility flight mode
 - Aluminum Standoffs: Unlorpsy 10Pcs Red Femal Round Aluminum Standoffs 25mm 
 
 ## Documentation
-- [Build Log](./BUILD-LOG.md) — full design history, iteration notes, and fabrication updates
+- [Build Log](./Build-Log.md) — full design history, iteration notes, and fabrication updates
 - [Docs/parts-list.md](./Docs/parts_list.md) — final parts list and budget
 - [Images](./images) — CAD renders, simulation results, fabrication photos
 
