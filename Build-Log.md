@@ -189,3 +189,63 @@ exported and organized by part for printing. All simulation results saved to ima
 folder — see images/update-8/.
 
 ---
+
+## Update 9 — Motor Mount Redesign and Slicer Learning Curve · June 25 – July 9, 2026
+
+**What I did:**
+Received all electronics and invested in an Elegoo Centauri Carbon 1 3D printer for 
+this and future projects. Spent approximately two weeks focused entirely on the motor 
+mount — the smallest part of the drone — which turned out to be the most educational 
+phase of the build so far. This period was largely a slicer learning curve, using the 
+motor mount as the test piece since it uses the least filament of any component.
+
+Filament choice confirmed as PETG throughout — chosen for its balance of durability, 
+weight, and vibration resistance, which is critical for a drone that will crash during 
+testing.
+
+**What worked:**
+By the end of this phase the motor mount design is structurally sound and passes a 
+real load test — a school lanyard was attached to the motor mounting face and 15 lbs 
+of weight was hung from it without failure. The final slicer settings with increased wall 
+loops and infill density on the full part (without a modifier block) produced a clean, 
+strong print with no visible seam vulnerabilities.
+
+Heat-set brass inserts in the inner arm mechanism provide a reliable threaded interface 
+for the motor mount screws. Tightening method confirmed: hand-tighten then turn 
+approximately 5 small notches with a screwdriver until snug — no gaps between motor 
+mount base and inner arm surface.
+
+**What failed or needed changing:**
+
+*Problem 1 — Motor wire clearance:*
+The original motor mount hole pattern was centered on the base, but the EMAX ECO II 
+2306 motors have a rigid section of wire that cannot bend. With the mount centered, 
+this rigid wire had no clearance and could not fit. Making the mount longer risked 
+structural integrity, so the hole pattern was moved to the front edge of the base 
+instead. Full redesign done in SolidWorks.
+
+*Problem 2 — Neck fragility on first prints:*
+The neck section of the motor mount broke with minimal force on early prints. Added 
+a modifier block in Orca Slicer targeting the neck area and increased wall loops to 10 
+and infill density to 10% in that zone only — keeping the rest of the part lighter. The 
+neck passed the 15 lb load test but a crack formed on the base plate instead, 
+indicating the base was now the weak point.
+
+*Problem 3 — Modifier block seam:*
+Removing the modifier block revealed a visible layer seam at the boundary where the 
+modifier block started — this seam was actually more vulnerable to breakage than the 
+original neck. Modifier block removed entirely.
+
+*Problem 4 — Base plate cracking under screw force:*
+When screwing the motor mount to the inner arm, the base plate cracked — first with 
+M3 screws alone, then again using a nut as a temporary spacer. Research identified 
+the cause: PETG cannot withstand the compressive force of an overtightened screw 
+regardless of print settings.
+
+**What I changed:**
+Increased base plate thickness by 2–3mm in SolidWorks to address the cracking under 
+load. Removed the modifier block and instead increased wall loops and infill density 
+uniformly across the entire part — this eliminated the seam vulnerability while keeping 
+weight reasonable. Confirmed correct tightening method: hand-tight plus approximately 
+5 small screwdriver notches until snug. This produced zero gaps between mount and 
+arm with no cracking.
