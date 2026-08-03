@@ -249,3 +249,74 @@ uniformly across the entire part — this eliminated the seam vulnerability whil
 weight reasonable. Confirmed correct tightening method: hand-tight plus approximately 
 5 small screwdriver notches until snug. This produced zero gaps between mount and 
 arm with no cracking.
+
+## Update 10 — Inner Arm Mechanism · July 9 – July 16, 2026
+
+**What I did:**
+Designed, iterated, and finalized the inner arm mechanism — the sliding arm that 
+extends and contracts within the outer sleeve. This is the most structurally complex 
+part of the build. Used small sample prints throughout to test settings and geometry 
+before committing to full prints, running approximately 3–4 sample iterations before 
+printing each final version. This saved significant filament compared to reprinting the 
+full part each time.
+
+The final geometry resembles an upside-down pair of aviator glasses when viewed from 
+above — two separated hollow rectangular openings rather than one continuous hollow 
+channel. The center section between the two openings is deliberately sized to 
+accommodate a gear for the future automated arm mechanism. Chamfers were added 
+throughout in SolidWorks — on the inner edges of the hollow openings and the majority 
+of outer edges — primarily to improve sliding fit within the outer sleeve rather than for 
+print quality.
+
+**What worked:**
+Vertical print orientation was the correct final choice. Printing vertically eliminated the 
+need for supports entirely — the motor mount holes which caused significant support 
+removal difficulty when printing horizontally printed cleanly in vertical orientation 
+without any support material. This also reduced total filament usage compared to 
+horizontal printing with supports.
+
+The separated hollow geometry reduced bridging distance significantly compared to the 
+original continuous hollow design, producing cleaner internal surfaces. Heat transfer 
+from motors to the arm is not a concern — the part is solid enough that it would require 
+significantly more heat than the motors produce to cause any warping.
+
+Sample print approach proved highly effective — testing bridging and slicer settings on 
+small sections of the part before printing the full version saved considerable filament 
+and time across multiple iterations.
+
+**What failed or needed changing:**
+
+*Problem 1 — Print orientation and bridging:*
+Initial prints attempted horizontally to reduce print time and filament. However the 
+hollow interior required bridging across a long unsupported span, producing significant 
+filament drooping and stringing inside the part. Multiple slicer adjustments were made 
+to address this including reducing bridge speed, increasing fan speed for faster cooling 
+and earlier solidification, and reducing internal bridge flow ratio from 0.95 to 0.80. 
+These changes improved but did not fully resolve the drooping.
+
+*Problem 2 — Warping on horizontal prints:*
+Horizontal printing also introduced first layer warping on the corners. A brim was 
+added to improve bed adhesion and reduce warping, which helped but added post-print 
+cleanup time.
+
+*Problem 3 — Weight:*
+The redesigned geometry with separated hollow openings and additional material 
+between them added weight compared to the original design. Each inner arm mechanism 
+weighs approximately 70 grams as printed. With four arms required this contributes 
+280 grams to the total all-up weight — a significant portion of the weight budget and 
+an open problem going into the next phase.
+
+**What I changed:**
+Switched final print orientation to vertical — no supports required, cleaner motor mount 
+holes, reduced filament usage compared to horizontal with supports. Redesigned hollow 
+geometry from one continuous opening to two separated openings with chamfered edges, 
+reducing bridging distance and improving sleeve sliding fit. Center section between 
+openings intentionally retained for future gear integration in the automated arm phase. 
+Arm weight flagged as an area for potential redesign in a future iteration if all-up 
+weight proves problematic during flight testing.
+
+**Open problem:**
+At 70g per arm and 4 arms total, the inner arm mechanisms alone account for 280g 
+of the all-up weight. This will be monitored during flight testing. If thrust-to-weight 
+ratio proves insufficient, the arm geometry will be revisited to reduce material in 
+non-structural areas.
