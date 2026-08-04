@@ -11,8 +11,8 @@ allowing real-time switching between high-stability and high-agility flight mode
 - ✅ Parts selection and budget finalized
 - ✅ CAD complete — stress simulations validated, STL files exported
 - ✅ 3D printer received — fabrication in progress
-- 🔄 Electronics assembly
-- ⬜ Betaflight configuration and first hover test
+- ✅ Electronics assembly
+- ✅ Betaflight configuration and first hover test
 - ⬜ Flight characteristic data collection
 
 ## Built With
