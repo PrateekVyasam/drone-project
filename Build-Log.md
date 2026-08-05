@@ -320,3 +320,69 @@ At 70g per arm and 4 arms total, the inner arm mechanisms alone account for 280g
 of the all-up weight. This will be monitored during flight testing. If thrust-to-weight 
 ratio proves insufficient, the arm geometry will be revisited to reduce material in 
 non-structural areas.
+
+## Update 11 — Outer Arm Sleeve · July 2026
+
+**What I did:**
+Designed and iterated the outer arm sleeve — the fixed channel integrated into the 
+full frame that the inner arm mechanism slides within. Used the same sample-print 
+approach as the previous update, printing small sections of the outer sleeve and a 
+full-length sample of the inner arm mech to test fit and sliding before committing to 
+printing the full frame.
+
+Progression: outer sleeve samples confirmed working → printed full-length inner arm 
+mech → printed full-length outer sleeve → confirmed fit → printed full frame.
+
+**What worked:**
+Final locking mechanism is clean and reliable. The outer sleeve has a single slot on 
+top. The inner arm has two holes on its top face that align with this slot at both the 
+contracted and extended positions. A screw passes through the slot into the hole with 
+a washer sitting on top of the outer sleeve — the washer allows controlled tightening 
+to whatever tension is needed to lock the arm securely without overtightening. This 
+replaced the original two-slot design and is both stronger and lighter since it requires 
+fewer screws.
+
+Sliding friction is intentionally calibrated — smooth enough to slide freely by hand 
+but with enough resistance to prevent slipping under flight loads. Deliberately kept 
+at this level rather than making it frictionless, since the automated version in 
+Prototype 2 will require different friction characteristics anyway.
+
+Bridging flow ratio finalized at 0.86 — this resolved the internal drooping issue 
+that carried over from the inner arm mech phase. Now correctly identified as the 
+primary bridging fix.
+
+Also worth noting: the separated hollow opening geometry in the inner arm mech 
+served a dual purpose beyond reducing bridge distance — it reduces the contact 
+surface area between the inner arm and the outer sleeve wall, which directly 
+contributes to smoother sliding. Less surface contact means less friction.
+
+**What failed or needed changing:**
+
+*Problem 1 — Fit too tight despite correct dimensions:*
+The inner arm mech would not fit inside the outer sleeve even though CAD dimensions 
+had the correct clearance. This is a known FDM printing characteristic — filament 
+expansion causes printed parts to run slightly larger than modeled dimensions. 
+Gradually increased the offset in 0.2mm increments and landed on 0.5mm clearance 
+in CAD to achieve the intended real-world fit.
+
+*Problem 2 — Rough sliding and cracking from two-slot design:*
+With the initial 0.5mm offset, the inner arm slid through but was extremely rough — 
+required hitting the screwdriver handle to extract it. The two slots on either side of 
+the outer sleeve wall also cracked the sleeve edge when the inner arm was mid-travel 
+on a sample print. Two slots removed material from both sides simultaneously, 
+reducing wall rigidity significantly.
+
+*Problem 3 — Slicer compensation values:*
+Two Orca Slicer settings adjusted to improve dimensional accuracy:
+XY hole compensation set to 0.1mm — improves accuracy of circular hole geometry.
+XY contour compensation set to -0.15mm — slightly reduces outer perimeter size, 
+bringing printed dimensions closer to CAD intent and improving sliding fit.
+These two values in combination with the 0.5mm CAD offset produced the correct 
+real-world sliding clearance.
+
+**What I changed:**
+Removed side slots entirely — replaced with single slot on top of outer sleeve only. 
+This increased wall rigidity, eliminated the cracking failure mode, reduced screw 
+count, and decreased overall drone weight slightly. Locking mechanism redesigned 
+around top slot with washer and screw as described above. Slicer compensation 
+values dialed in as above. Bridging flow ratio set to 0.86 across bridged sections.
