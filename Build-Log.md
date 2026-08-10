@@ -386,3 +386,57 @@ This increased wall rigidity, eliminated the cracking failure mode, reduced scre
 count, and decreased overall drone weight slightly. Locking mechanism redesigned 
 around top slot with washer and screw as described above. Slicer compensation 
 values dialed in as above. Bridging flow ratio set to 0.86 across bridged sections.
+
+## Update 12 — Drone Frame · July 2026
+
+**What I did:**
+Printed the full drone frame using the same slicer settings established during the 
+outer arm sleeve phase. Before printing, made several structural and printability 
+design changes to the frame in SolidWorks based on lessons learned from earlier 
+iterations.
+
+**What worked:**
+Slicer settings transferred cleanly from outer sleeve samples to the full frame print. 
+Aluminum standoffs performed as intended — 25mm standoffs screw up from the 
+underside of the drone through washer-clearance holes, protrude above the frame, 
+and the top plate screws directly onto them, creating clean spacing between the top 
+plate and internal components without relying on printed material for structural 
+support.
+
+Heat gun warping fix proved effective. A sample inner arm mech was inserted into 
+the warped sleeve with a paper towel barrier to prevent fusing, then a heat gun was 
+applied to the warped tips while pressing flat with a hard object. Warp reduced 
+significantly — minor residual warp remains but does not affect arm sliding or locking 
+mechanism function. No reprinting required.
+
+Print orientation decision — printing the frame with the top face down on the bed 
+meant the arm locking slots printed directly on the build plate rather than requiring 
+bridging. This eliminated bridge defects at the slot locations entirely.
+
+**What failed or needed changing:**
+
+*Problem 1 — Printed peg vulnerability:*
+Original design used printed PETG pegs to mount the top plate and to serve as 
+standoffs for the ESC and flight controller. In a crash these pegs would be the first 
+point of failure — breaking them would effectively total the frame. All printed pegs 
+removed from the design.
+
+*Problem 2 — Bridging over slot openings:*
+Original print orientation would have required the printer to bridge over the arm 
+locking slots, producing unreliable surface quality in a structurally critical area. 
+Resolved by flipping the print orientation so slots face the build plate and print 
+without any bridging.
+
+*Problem 3 — Tip warping on outer arm sleeves:*
+The tips of the outer arm sleeves within the frame warped during printing. Addressed 
+post-print with heat gun as described above rather than reprinting — reprinting was 
+not viable due to the significant filament cost of the full frame.
+
+**What I changed:**
+Removed all printed pegs. Replaced top plate mounting and component standoffs with 
+the following system — washer-clearance holes on the underside of the frame accept 
+screws from below, heat-set inserts on the top face of the frame receive those screws, 
+25mm aluminum standoffs thread onto the protruding screw ends above the frame, 
+and the top plate screws onto the standoffs. This creates a crash-resistant mounting 
+system where the aluminum standoffs absorb impact rather than printed PETG. Frame 
+print orientation flipped to eliminate bridging over slot locations.
