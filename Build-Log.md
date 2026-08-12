@@ -440,3 +440,52 @@ screws from below, heat-set inserts on the top face of the frame receive those s
 and the top plate screws onto the standoffs. This creates a crash-resistant mounting 
 system where the aluminum standoffs absorb impact rather than printed PETG. Frame 
 print orientation flipped to eliminate bridging over slot locations.
+
+## Update 13 — Print Completion, Assembly, and Electronics · August 2026
+
+**What I did:**
+Completed all printing for Prototype 1 after over 100 hours of total print time. 
+The full frame prints as one complete part. Additional printed components: 4 inner 
+arm mechanisms, 4 motor mounts, and 1 top plate — 10 printed parts total. Only 
+print failure across the entire build was the outer sleeve tip warping documented 
+in Update 12, resolved with the heat gun method.
+
+Completed full mechanical assembly and electronics installation.
+
+**Mechanical assembly changes from original design:**
+
+Replaced nuts-as-spacers with proper washers for motor mount attachment — 
+cleaner interface and slight weight reduction. Pressed all brass heat-set inserts 
+into designated holes across the frame. Installed long M3 screws through the 
+frame underside to serve as standoffs for the ESC and flight controller stack.
+
+**Electronics assembly:**
+
+Motor wire extension — the telescoping arm mechanism creates too much distance 
+between the motors and ESC for the stock motor wires to reach. Purchased 23 feet 
+of 20 AWG silicone wire matching the original motor wire gauge. Extended each 
+motor wire by stripping both ends, twisting them together, soldering the joint, 
+and finishing with heat shrink tubing. Repeated for all 12 motor wires across 4 
+motors.
+
+Soldering sequence: soldered all 4 motors with extended wires onto the ESC pads, 
+soldered the XT60 battery connector onto the ESC after tinning the pads manually, 
+slid the flight controller onto the ESC stack, then soldered the receiver wires 
+directly onto the designated pads on the flight controller.
+
+This was first-time electronics soldering. Common issues encountered on early 
+joints included solder adhesion and spiking when withdrawing the iron. Approach 
+used: complete all instances of one connection type, identify what went wrong on 
+the first attempt, apply the correction to subsequent connections, then return to 
+fix the first. By the end of each connection type the technique had improved 
+significantly.
+
+**Bench testing:**
+
+After assembly, connected to Betaflight via USB. Navigated to the motor tab and 
+spun each motor individually to verify correct function. All four motors confirmed 
+operational. Propellers were not installed during this test. Receiver binding and 
+basic flight controller configuration completed in Betaflight.
+
+**Status:**
+Prototype 1 is fully assembled and bench tested. Ready for first flight attempt.
