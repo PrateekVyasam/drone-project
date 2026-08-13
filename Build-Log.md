@@ -489,3 +489,143 @@ basic flight controller configuration completed in Betaflight.
 
 **Status:**
 Prototype 1 is fully assembled and bench tested. Ready for first flight attempt.
+
+## Update 14 — Final Assembly and First Flight · August 2026
+
+**What I did:**
+Completed final assembly and conducted the first flight of Prototype 1.
+
+Assembled the top plate onto the aluminum standoffs and mounted the battery 
+on top using three rubber bands — sufficient for a testing prototype where no 
+aggressive maneuvers were planned.
+
+Bound the transmitter to the receiver and configured two auxiliary switches 
+in Betaflight: one switch to arm the drone, one to enable Angle Mode — a 
+stabilization mode that prevents the drone from flipping during basic 
+control inputs by leveling itself automatically.
+
+**What worked:**
+Transmitter binding and Angle Mode configuration both confirmed working. 
+Battery mounting with rubber bands held securely through the flight with 
+no slippage. Drone achieved stable flight.
+
+Balance verification method: held the fully assembled drone at its center 
+point by hand to check attitude. Initial battery placement at the center 
+of the top plate caused noticeable forward bias. Moving the battery slightly 
+aft of center produced a balanced attitude confirmed by hand before flight.
+
+**What failed or needed changing:**
+
+*Problem 1 — Transmitter binding process:*
+No prior experience with binding an ELRS receiver. Had to learn the process 
+from scratch — connecting the receiver through the Betaflight wifi interface 
+and matching the transmitter passphrase.
+
+*Problem 2 — Throttle range error in Betaflight:*
+After binding, Betaflight flagged a throttle error caused by the throttle 
+channel maximum value being outside the safe range. Resolved by manually 
+entering the correct values through the Betaflight command line interface — 
+throttle range set to 1000 minimum, 2000 maximum, with 1500 as the idle 
+mid-point. This is standard ELRS throttle calibration.
+
+*Problem 3 — Forward center of gravity:*
+With the battery centered on the top plate the drone was noticeably front 
+heavy in the first flight. Repositioned battery aft of center and reconfirmed 
+balance by hand before the second flight.
+
+**Status:**
+Prototype 1 airborne. First flight confirmed basic functionality — motors, 
+receiver, flight controller, and stabilization all working. Center of gravity 
+issue identified and corrected. Second flight and arm extension testing 
+documented in Update 15.
+
+## Update 15 — Second Flight, Frame Failure, and Proof of Flight · August 2026
+
+**What I did:**
+Conducted the second flight of Prototype 1 with the revised objective of 
+testing arm extension and contraction differences in flight characteristics.
+
+**What worked:**
+First flight in the confined space confirmed stable, controllable flight 
+in calm conditions. Prototype 1 demonstrated that the variable-geometry 
+frame design is structurally and aerodynamically viable under controlled 
+conditions.
+
+After the crash, taped the cracked frame sections and conducted a third 
+flight to confirm the drone could still achieve stable flight in its 
+repaired state. Successfully hovered for 40 seconds — recorded on video. 
+Proof of flight confirmed for Prototype 1.
+
+**What failed:**
+
+*Frame failure:*
+Moved to an open field to allow more space for arm extension testing. 
+Wind conditions were stronger than anticipated. The drone was blown into 
+concrete, cracking the main frame and two of the four outer arm sleeve 
+sections on impact. With the frame compromised, arm extension and 
+contraction testing was not possible — the primary research objective 
+for Prototype 1 could not be completed this flight.
+
+*Motor heat under high throttle demand:*
+All-up weight required motors to run at half throttle or above to 
+maintain hover. After landing, motors were hot to the touch. Sustained 
+operation at this throttle level risks heat transfer to the PETG motor 
+mounts over time, potentially causing warping or structural softening 
+at the mount interface. This is a known risk for Prototype 2 to address 
+through weight reduction.
+
+**Revised objective:**
+Given the damage, the objective was revised — demonstrate that Prototype 1 
+can achieve stable flight. This was confirmed across all three flights 
+and documented in a 40-second hover video. The fundamental concept is 
+validated — a variable-geometry quadrotor frame is buildable and flyable 
+from scratch using FDM-printed PETG components.
+
+**Findings and failure analysis:**
+The crack location — outer arm sleeve sections — is consistent with the 
+stress concentration identified in static simulation. Dynamic impact 
+loading from a concrete collision far exceeds the static thrust loads 
+modeled in simulation. The outer arm sleeve junction is confirmed as the 
+primary structural vulnerability under real-world loading conditions.
+
+PETG at current wall thickness and infill is adequate for flight 
+vibration loads but insufficient for impact resistance. Motor heat at 
+sustained high throttle is a secondary risk to PETG motor mounts that 
+was not anticipated in the original design.
+
+**Status:**
+Prototype 1 objective met — stable flight confirmed and recorded. 
+Arm extension testing deferred to Prototype 2. Build log for 
+Prototype 1 complete.
+
+## Prototype 1 — Closed
+
+Core concept validated. Variable-geometry quadrotor successfully 
+designed, fabricated, and flown from scratch. Key findings carried 
+into Prototype 2:
+
+- Outer arm sleeve junction is the primary structural failure point 
+  under dynamic loading
+- All-up weight too high — motors running hot at sustained hover 
+  throttle, risking PETG motor mount warping over time
+- Motor wire extension required for full arm travel — factor into 
+  initial design rather than retrofitting
+- Battery position requires aft offset from center for balanced flight
+- PETG at current settings adequate for flight loads, insufficient 
+  for impact resistance
+- Slicer settings finalized: bridging flow ratio 0.86, XY hole 
+  compensation 0.1mm, XY contour compensation -0.15mm, brim required 
+  for horizontal prints
+- Total print time: 100+ hours across 10 printed components
+
+## Prototype 2 — Goals
+
+- Reduce inner arm mechanism weight below 70g per arm
+- Reinforce outer arm sleeve junction for improved impact resistance
+- Address motor heat issue — either through weight reduction to lower 
+  required hover throttle, or through heat-resistant motor mount 
+  material or geometry
+- Design arm extension mechanism clearance into initial CAD rather 
+  than retrofitting wire extensions
+- Conduct controlled arm extension and contraction flight testing to 
+  quantify flight characteristic differences between configurations
