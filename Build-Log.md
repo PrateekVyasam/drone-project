@@ -598,34 +598,44 @@ Prototype 1 objective met — stable flight confirmed and recorded.
 Arm extension testing deferred to Prototype 2. Build log for 
 Prototype 1 complete.
 
-## Prototype 1 — Closed
+## Prototype 1 — Known Issues Summary
 
-Core concept validated. Variable-geometry quadrotor successfully 
-designed, fabricated, and flown from scratch. Key findings carried 
-into Prototype 2:
+The following problems were identified during the Prototype 1 build and 
+flight testing. All will be addressed in Prototype 2.
 
-- Outer arm sleeve junction is the primary structural failure point 
-  under dynamic loading
-- All-up weight too high — motors running hot at sustained hover 
-  throttle, risking PETG motor mount warping over time
-- Motor wire extension required for full arm travel — factor into 
-  initial design rather than retrofitting
-- Battery position requires aft offset from center for balanced flight
-- PETG at current settings adequate for flight loads, insufficient 
-  for impact resistance
-- Slicer settings finalized: bridging flow ratio 0.86, XY hole 
-  compensation 0.1mm, XY contour compensation -0.15mm, brim required 
-  for horizontal prints
-- Total print time: 100+ hours across 10 printed components
+**Weight and Thrust Efficiency:**
+- All-up weight of approximately 1kg (2.2 lbs) required motors to sustain 
+  above half throttle to maintain hover, causing motors to run hot to the 
+  touch after flight — risk of heat warping PETG motor mounts over time
+- The separated hollow opening geometry in the inner arm mechanisms, while 
+  reducing sliding friction against the outer sleeve, added significant 
+  weight compared to the original continuous hollow design — original 
+  geometry should be reconsidered for Prototype 2
+- Excess printed material directly beneath the propeller disk disrupts 
+  thrust airflow and reduces overall flight efficiency
+- Overall frame size may be a contributing factor to excessive weight — 
+  a smaller footprint in Prototype 2 would reduce both print time and 
+  all-up weight
 
-## Prototype 2 — Goals
+**Structural:**
+- No landing stands included in the design — hard landings transferred 
+  impact force directly to the frame, increasing likelihood of cracking 
+  during testing
+- Aluminum standoffs came loose during hard landings, requiring 
+  retightening between flights
 
-- Reduce inner arm mechanism weight below 70g per arm
-- Reinforce outer arm sleeve junction for improved impact resistance
-- Address motor heat issue — either through weight reduction to lower 
-  required hover throttle, or through heat-resistant motor mount 
-  material or geometry
-- Design arm extension mechanism clearance into initial CAD rather 
-  than retrofitting wire extensions
-- Conduct controlled arm extension and contraction flight testing to 
-  quantify flight characteristic differences between configurations
+**Wiring:**
+- Extended motor wires routed externally are at risk of contact with 
+  propellers — temporarily secured with double-sided tape as a field fix. 
+  Wire routing must be integrated into the CAD design in Prototype 2 
+  rather than managed post-assembly
+
+**Motor Mounting:**
+- Two of four motors did not sit fully flush against their motor mounts — 
+  flat enough to fly but not to specification. Motor mount interface 
+  geometry needs refinement in Prototype 2
+
+**Research Objective:**
+- Arm extension and contraction flight testing not completed due to frame 
+  failure on second flight — primary research objective deferred to 
+  Prototype 2
