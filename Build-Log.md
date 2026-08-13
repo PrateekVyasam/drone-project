@@ -321,7 +321,7 @@ of the all-up weight. This will be monitored during flight testing. If thrust-to
 ratio proves insufficient, the arm geometry will be revisited to reduce material in 
 non-structural areas.
 
-## Update 11 — Outer Arm Sleeve · July 2026
+## Update 11 — Outer Arm Sleeve · July 16 - 23, 2026
 
 **What I did:**
 Designed and iterated the outer arm sleeve — the fixed channel integrated into the 
@@ -387,7 +387,7 @@ count, and decreased overall drone weight slightly. Locking mechanism redesigned
 around top slot with washer and screw as described above. Slicer compensation 
 values dialed in as above. Bridging flow ratio set to 0.86 across bridged sections.
 
-## Update 12 — Drone Frame · July 2026
+## Update 12 — Drone Frame · July 23 - 25, 2026
 
 **What I did:**
 Printed the full drone frame using the same slicer settings established during the 
@@ -539,7 +539,7 @@ receiver, flight controller, and stabilization all working. Center of gravity
 issue identified and corrected. Second flight and arm extension testing 
 documented in Update 15.
 
-## Update 15 — Second Flight, Frame Failure, and Proof of Flight · August 2026
+## Update 15 (Final For Prototype 1) — Second Flight, Frame Failure, and Proof of Flight · August 2026
 
 **What I did:**
 Conducted the second flight of Prototype 1 with the revised objective of 
