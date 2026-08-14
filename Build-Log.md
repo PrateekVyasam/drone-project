@@ -2,6 +2,10 @@
 
 All design decisions, iterations, failures, and changes documented chronologically.
 
+# First Flight Test:
+
+https://drive.google.com/file/d/1arUk2rYCO0E1ZdW9J-9_TNel4gCMPolg/view?usp=sharing
+
 ---
 
 ## Update 1 — Research and Parts Selection · May 28, 2026
