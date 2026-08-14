@@ -4,7 +4,8 @@ A custom-built FPV drone with mechanically extendable arms adjustable mid-flight
 allowing real-time switching between high-stability and high-agility flight modes.
 
 ## Concept
-[keep your existing concept paragraph exactly as is — it's well written]
+
+This drone features a telescoping arm mechanism that allows each arm to extend or contract, changing the distance between the motors and the center of the frame. Extending the arms increases the moment of inertia, producing greater stability and improved hover efficiency through reduced propeller interference. Contracting the arms decreases rotational resistance, enabling faster and more agile flight. The goal of this project is to validate that a single drone platform can dynamically switch between these two flight profiles, and to quantify the measurable differences in flight characteristics between arm configurations through Betaflight Blackbox data collection.
 
 ## Current Status
 - ✅ Frame research and arm extension mechanism design
@@ -13,7 +14,8 @@ allowing real-time switching between high-stability and high-agility flight mode
 - ✅ 3D printer received — fabrication in progress
 - ✅ Electronics assembly
 - ✅ Betaflight configuration and first hover test
-- ⬜ Flight characteristic data collection
+- ✅ Prototype 1 flight confirmed — hover video recorded
+- ⬜ Arm extension and contraction flight testing (Prototype 2)
 
 ## Built With
 
