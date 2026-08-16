@@ -15,7 +15,7 @@ This drone features a telescoping arm mechanism that allows each arm to extend o
 - ✅ Electronics assembly
 - ✅ Betaflight configuration and first hover test
 - ✅ Prototype 1 flight confirmed — hover video recorded
-- ⬜ Arm extension and contraction flight testing (Prototype 2)
+- ⬜ Prototype 2 Design & Research
 
 ## Built With
 
